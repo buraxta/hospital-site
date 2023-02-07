@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=MonteCarlo&family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Sacramento&display=swap');
+
+:root{
+    --blue: #0188DF;
+    --black: #354046; 
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+    height: 3000px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    padding: 2rem 1rem;
+    z-index: 1000;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: var(--black);
+}
+header a:hover{
+    color: var(--blue);
+}
+
+header .container .logo{
+    font-size: 3rem;
+}
+
+header .container .logo span{
+    color: var(--blue);
+}
+
+header .nav ul{
+    margin: 0; padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .nav ul li{
+    margin: 0 1rem;
+}
+
+header .nav ul li a{
+    font-size: 2rem;
+}
+
+header .fa-bars{
+    font-size: 3.5rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+header .fa-times{
+    transform: rotate(180deg);
+}
+
+
+/* media queries */
+
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .nav{
+        position: fixed;
+        top: -100%; left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, .3);
+        border-radius: .5rem;
+        border: .3rem solid var(--blue) !important;
+        background: #fff;
+        width: 95%;
+        opacity: 0;
+    }
+
+    header .nav ul{
+        width: 100%;
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .nav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    header .nav ul li a{
+        font-size: 3rem;
+        display: block;
+    }
+
+    header .nav-toggle{
+        top: 50%;
+        opacity: 1;
+    }
+}
