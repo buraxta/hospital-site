@@ -72,6 +72,18 @@ section{
                 0 .3rem .5rem rgba(0, 0, 0, .3);
 }
 
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    padding-top: 8rem;
+    color: var(--black);
+}
+
+.heading span{
+    color: var(--blue);
+}
+
 header{
     width: 100%;
     position: fixed;
@@ -173,10 +185,33 @@ header .fa-times{
     color: #666;
 }
 
+.facility{
+    min-height: 100vh;
+}
 
+.facility .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
 
+.facility .box-container .box{
+    height: 20rem;
+    width: 35rem;
+    margin: .3rem;
+    overflow: hidden;
+}
 
+.facility .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
+.facility .box-container .box:hover img{
+    transform: scale(1.3);
+}
 
 
 
