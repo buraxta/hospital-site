@@ -304,9 +304,48 @@ header .fa-times{
     color: #666;
 }
 
+.contact{
+    background: var(--black);
+}
 
+.contact .heading{
+    color: #fff;
+}
 
+.contact form{
+    text-align: center;
+}
 
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input, select{
+    height: 4rem;
+    width: 49%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.contact form input[type="submit"]{
+    width: 20rem;
+}
+
+.contact form input[type="submit"]:hover{
+    background: var(--black);
+}
 
 
 /* media queries */
@@ -352,5 +391,13 @@ header .fa-times{
     header .nav-toggle{
         top: 50%;
         opacity: 1;
+    }
+
+    .contact form .inputBox input, select{
+        width: 100%;
+    }
+
+    .contact form input[type="submit"]{
+        width: 100%;
     }
 }
