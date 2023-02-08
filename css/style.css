@@ -32,6 +32,46 @@ body{
     height: 3000px;
 }
 
+section{
+    overflow: hidden;
+}
+
+.button{
+    height: 3.5rem;
+    width: 15rem;
+    background: var(--blue);
+    color: #fff;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    top: -100%; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black);
+    z-index: -1;
+    transition: .2s linear;
+    border-radius: 0.5rem;
+}
+
+.button:hover::before{
+    top: 0;
+}
+
+.button:hover{
+    box-shadow: .1rem .5rem var(--blue),
+                0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
 header{
     width: 100%;
     position: fixed;
@@ -87,6 +127,29 @@ header .fa-bars{
 header .fa-times{
     transform: rotate(180deg);
 }
+
+
+
+.home .content h1{
+    font-size: 5rem;
+    color: var(--black);
+}
+
+.home .content h1 span{
+    color: var(--blue);
+}
+.home .content h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
 
 
 /* media queries */
