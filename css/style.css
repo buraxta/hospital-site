@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=MonteCarlo&family=Montserrat&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Sacramento&display=swap');
-
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 :root{
     --blue: #0188DF;
     --black: #354046; 
@@ -29,7 +28,6 @@ html{
 
 body{
     overflow-x: hidden;
-    height: 3000px;
 }
 
 section{
